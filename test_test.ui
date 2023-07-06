@@ -1,0 +1,2435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>827</width>
+    <height>789</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>代理小工具</string>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="accessibleName">
+   <string/>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_13">
+   <item row="0" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="name_banben">
+       <property name="text">
+        <string>版本选择</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="banbenxuanze">
+       <item>
+        <property name="text">
+         <string>6.8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6.8.6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6.9</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="jdk">
+       <property name="text">
+        <string>jre版本选择</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="select_jdk">
+       <item>
+        <property name="text">
+         <string>1.7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1.8</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="agentjiagou">
+       <property name="text">
+        <string>代理架构</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cpu">
+       <item>
+        <property name="text">
+         <string>ARM</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Linux</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="weishu">
+       <property name="text">
+        <string>位数</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="weishu1">
+       <item>
+        <property name="text">
+         <string>X64</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>X32</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <layout class="QHBoxLayout" name="horizontalLayout_13">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="agent_ip">
+             <property name="text">
+              <string>代理IP</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="input_agentip"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="path">
+             <property name="text">
+              <string>安装路径</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="input_path">
+             <property name="placeholderText">
+              <string>例如/opt/agent</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="username">
+             <property name="text">
+              <string>用户名</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="input_username">
+             <property name="text">
+              <string>root</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="ubackup_ip">
+             <property name="text">
+              <string>黑方IP</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="input_backupip"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="password">
+             <property name="text">
+              <string>密码</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="input_password">
+             <property name="text">
+              <string>unary@2008</string>
+             </property>
+             <property name="frame">
+              <bool>true</bool>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="dragEnabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="port">
+             <property name="text">
+              <string>端口号</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="input_port">
+             <property name="text">
+              <string>443</string>
+             </property>
+             <property name="placeholderText">
+              <string>默认443</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_11">
+       <item>
+        <widget class="QLabel" name="new_backup_ip">
+         <property name="text">
+          <string>新黑方IP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_new_backupip"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QGridLayout" name="gridLayout_12">
+     <item row="0" column="0">
+      <widget class="QLabel" name="name_zujian">
+       <property name="text">
+        <string>组件选择（依赖组件需自行选择）</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>420</width>
+          <height>597</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>22</y>
+           <width>418</width>
+           <height>576</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QLabel" name="name_1">
+              <property name="text">
+               <string>文件系统</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="0" column="0">
+               <layout class="QVBoxLayout" name="verticalLayout_15">
+                <item>
+                 <widget class="QCheckBox" name="System">
+                  <property name="text">
+                   <string>System</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="NAS">
+                  <property name="text">
+                   <string>NAS </string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="1">
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <item>
+                 <widget class="QCheckBox" name="Script">
+                  <property name="text">
+                   <string>Script</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="OBS">
+                  <property name="text">
+                   <string>OBS</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="2">
+               <layout class="QVBoxLayout" name="verticalLayout_17">
+                <item>
+                 <widget class="QCheckBox" name="MassFile">
+                  <property name="text">
+                   <string>MassFile</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="OSS">
+                  <property name="text">
+                   <string>OSS</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="3">
+               <layout class="QVBoxLayout" name="verticalLayout_18">
+                <item>
+                 <widget class="QCheckBox" name="File">
+                  <property name="text">
+                   <string>File</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="COS">
+                  <property name="text">
+                   <string>COS</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="gridLayout_8">
+            <item row="0" column="0">
+             <widget class="QLabel" name="name_2">
+              <property name="text">
+               <string>数据库功能</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0">
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QCheckBox" name="SQLServer">
+                  <property name="text">
+                   <string>SQLServer</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="Sybase">
+                  <property name="text">
+                   <string>Sybase </string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="Informix">
+                  <property name="text">
+                   <string>Informix</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="MongoDB">
+                  <property name="text">
+                   <string>MongoDB</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="Domino">
+                  <property name="text">
+                   <string>Domino</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="UXDB">
+                  <property name="text">
+                   <string>UXDB</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="TDSQL">
+                  <property name="text">
+                   <string>TDSQL</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="Tbase">
+                  <property name="text">
+                   <string>TBase</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="DMLogic">
+                  <property name="text">
+                   <string>DMLogic</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="1">
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QCheckBox" name="MySQLLogical">
+                  <property name="text">
+                   <string>MySQLLogical</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="DB2">
+                  <property name="text">
+                   <string>DB2</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="ShenTong">
+                  <property name="text">
+                   <string>ShenTong</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="MySQLPhysical">
+                  <property name="text">
+                   <string>MySQLPhysical</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="Gbase8s">
+                  <property name="text">
+                   <string>Gbase8s</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="GaussDB">
+                  <property name="text">
+                   <string>GaussDB</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="TIDB">
+                  <property name="text">
+                   <string>TIDB</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="GoldenDB">
+                  <property name="text">
+                   <string>GoldenDB</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="2">
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QCheckBox" name="KingbasePhysical">
+                  <property name="text">
+                   <string>KingbasePhysical</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="OraclePhysical">
+                  <property name="text">
+                   <string>OraclePhysical</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="FusionInsight">
+                  <property name="text">
+                   <string>FusionInsight</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="OracleLogical">
+                  <property name="text">
+                   <string>OracleLogical</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="Hadoop">
+                  <property name="text">
+                   <string>Hadoop</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="KDB">
+                  <property name="text">
+                   <string>KDB</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="KingbaseLogical">
+                  <property name="text">
+                   <string>KingbaseLogical</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="OpenGauss">
+                  <property name="text">
+                   <string>OpenGauss</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="3">
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QCheckBox" name="DM">
+                  <property name="text">
+                   <string>DM</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="Gbase8t">
+                  <property name="text">
+                   <string>Gbase8t</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="PostgreSQL">
+                  <property name="text">
+                   <string>PostgreSQL</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="HANA">
+                  <property name="text">
+                   <string>HANA</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="highgo">
+                  <property name="text">
+                   <string>HighGo</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="SequoiaDB">
+                  <property name="text">
+                   <string>SequoiaDB</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="HCS_GaussDB">
+                  <property name="text">
+                   <string>HCS_GaussDB</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="Gaussdb_DWS">
+                  <property name="text">
+                   <string>Gaussdb_DWS</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0">
+             <widget class="QLabel" name="name_3">
+              <property name="text">
+               <string>虚拟化功能</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_5">
+              <item row="0" column="0">
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <item>
+                 <widget class="QCheckBox" name="FusionSphere">
+                  <property name="text">
+                   <string>FusionSphere</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="VMware">
+                  <property name="text">
+                   <string>VMware</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="CNware">
+                  <property name="text">
+                   <string>CNware</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="HCS">
+                  <property name="text">
+                   <string>HCS</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="SangFor">
+                  <property name="text">
+                   <string>SangFor</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="1">
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <item>
+                 <widget class="QCheckBox" name="Hyper_V">
+                  <property name="text">
+                   <string>Hyper-V</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="EasyStack">
+                  <property name="text">
+                   <string>EasyStack</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="Zstack">
+                  <property name="text">
+                   <string>Zstack</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="TencentCloud">
+                  <property name="text">
+                   <string>TencentCloud</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="2">
+               <layout class="QVBoxLayout" name="verticalLayout_10">
+                <item>
+                 <widget class="QCheckBox" name="H3C">
+                  <property name="text">
+                   <string>H3C</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="InCloudSphere">
+                  <property name="text">
+                   <string>InCloudSphere</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="CommonCloud">
+                  <property name="text">
+                   <string>CommonCloud</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="CCE">
+                  <property name="text">
+                   <string>CCE</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="3">
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <widget class="QCheckBox" name="Kubernetes">
+                  <property name="text">
+                   <string>Kubernetes</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="TopSec">
+                  <property name="text">
+                   <string>TopSec</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="OpenStack">
+                  <property name="text">
+                   <string>OpenStack</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="IVS">
+                  <property name="text">
+                   <string>IVS</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <layout class="QGridLayout" name="gridLayout_10">
+            <item row="0" column="0">
+             <widget class="QLabel" name="name_7">
+              <property name="text">
+               <string>实时容灾</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <layout class="QGridLayout" name="gridLayout_3">
+              <item row="0" column="0">
+               <layout class="QVBoxLayout" name="verticalLayout_12">
+                <item>
+                 <widget class="QCheckBox" name="CDP">
+                  <property name="text">
+                   <string>CDP</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="EDR">
+                  <property name="text">
+                   <string>EDR</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="1">
+               <layout class="QVBoxLayout" name="verticalLayout_13">
+                <item>
+                 <widget class="QCheckBox" name="KVMDriver">
+                  <property name="text">
+                   <string>KVMDriver</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="BlockCopy">
+                  <property name="text">
+                   <string>BlockCopy</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="2">
+               <layout class="QVBoxLayout" name="verticalLayout_14">
+                <item>
+                 <widget class="QCheckBox" name="ESXiDriver">
+                  <property name="text">
+                   <string>ESXiDriver</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="VBDInitiator">
+                  <property name="text">
+                   <string>VBDInitiator</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="4" column="0">
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QLabel" name="name_8">
+              <property name="text">
+               <string>副本数据管理</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_25">
+              <item>
+               <widget class="QCheckBox" name="SQLServerCDM">
+                <property name="text">
+                 <string>SQLServerCDM</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="OracleCDM">
+                <property name="text">
+                 <string>OracleCDM</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="SystemCDM">
+                <property name="text">
+                 <string>SystemCDM</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="VolumeCDM">
+                <property name="text">
+                 <string>VolumeCDM</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="5" column="0">
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QLabel" name="name_14">
+              <property name="text">
+               <string>通用组件</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_26">
+              <item>
+               <widget class="QCheckBox" name="VolumeCopy">
+                <property name="text">
+                 <string>VolumeCopy</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="VolumeCBTDriver">
+                <property name="text">
+                 <string>VolumeCBTDriver</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="UFS">
+                <property name="text">
+                 <string>UFS</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="UAgent">
+                <property name="text">
+                 <string>UAgent</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="2">
+    <widget class="QTextBrowser" name="showlog">
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;使用须知：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;目前仅可以选择6.8版本进行安装；&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;数广版本也可以使用6.8进行安装；&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;默认用户root&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;默认密码unary@2008&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;点击一键安装时，界面会出现短暂“未响应”，不要点击界面，后台程序运行完会正常&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;输入代理IP后，可以点击“连接测试”查看IP是否通&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;默认安装uagent和file组件&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;使用一键卸载代理时，需要在“安装路径”输入安装路径（安装路径为查询出来的../ubackup/uagent/bin，“..”所显示内容)&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;使用一键切换黑方服务时，需要输入切换后黑方IP，安装路径&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;使用前确认代理是否有wget、tar命令，否则会安装失败&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;日志会打印在下方&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QPushButton" name="connect1">
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>连接测试</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ok">
+       <property name="text">
+        <string>一键安装</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cloes11_2">
+       <property name="text">
+        <string>清空日志</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="1" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_20">
+       <item>
+        <widget class="QPushButton" name="findagent">
+         <property name="text">
+          <string>查看代理进程</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="deleteagent">
+         <property name="text">
+          <string>卸载代理进程</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deleteagent_2">
+       <property name="text">
+        <string>查看当前代理黑方IP</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_19">
+       <item>
+        <widget class="QPushButton" name="changebackup">
+         <property name="text">
+          <string>切换黑方服务</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="cloes11">
+         <property name="text">
+          <string>关闭</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cloes11</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>814</x>
+     <y>776</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ok</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>connectiontest()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>761</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>261</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>connect1</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>Test()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>105</x>
+     <y>749</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>127</x>
+     <y>477</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ShenTong</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_shentong_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>118</x>
+     <y>282</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>54</x>
+     <y>206</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DM</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_dm_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>354</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>highgo</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_highgo_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>368</x>
+     <y>331</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>287</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>System</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_system_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Script</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_script_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MassFile</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_massfile_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>267</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>322</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>File</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_file_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>368</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>412</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>NAS</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_nas_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>120</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OBS</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_obs_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>154</x>
+     <y>187</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OSS</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_oss_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>192</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>312</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>COS</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_cos_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>392</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>504</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SQLServer</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_sqlserver_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>148</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MySQLLogical</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_mysqllogic_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>3</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>KingbasePhysical</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_kingbasephysical_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>274</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>474</x>
+     <y>13</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Sybase</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_sybase_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>98</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DB2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_db2_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OraclePhysical</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_oraclephysical_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>356</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>UAgent</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_uagent_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>706</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>493</x>
+     <y>730</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>UFS</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_ufs_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>706</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>721</x>
+     <y>725</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VolumeCBTDriver</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_volumecbtdriver_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>705</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>732</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VolumeCopy</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_volumecopy_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>708</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>572</x>
+     <y>739</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SQLServerCDM</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_sqlservercdm_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>107</x>
+     <y>659</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>576</x>
+     <y>719</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OracleCDM</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_oraclecdm_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>657</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>744</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SystemCDM</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_systemcdm_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>302</x>
+     <y>660</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>714</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VolumeCDM</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_volumecdm_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>399</x>
+     <y>659</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>801</x>
+     <y>743</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CDP</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_cdp_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>593</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>765</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>KVMDriver</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_kvmdriver_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>223</x>
+     <y>594</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>756</x>
+     <y>15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ESXiDriver</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_esxidriver_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>594</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>730</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>EDR</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_edr_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>616</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>697</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BlockCopy</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_blockcopy_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>255</x>
+     <y>618</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>688</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VBDInitiator</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_vbdinitiator_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>345</x>
+     <y>616</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>639</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Gbase8t</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_gbase8t_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>389</x>
+     <y>259</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>614</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Informix</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_informix_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>69</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>573</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PostgreSQL</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_postgresql_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>400</x>
+     <y>282</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>571</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MongoDB</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_mongodb_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>305</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Domino</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_domino_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>306</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Gbase8s</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_gbase8s_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>158</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Hadoop</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_hadoop_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>293</x>
+     <y>337</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>428</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>KDB</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_kdb_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>361</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>498</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TIDB</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_tidb_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>559</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GoldenDB</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_goldendb_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>149</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>598</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OpenGauss</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_opengauss_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>271</x>
+     <y>407</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>646</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Gaussdb_DWS</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_gaussdb_dws_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>677</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>KingbaseLogical</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_kingbaselogical_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TDSQL</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_tdsql_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>235</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>DMLogic</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_dmlogic_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>402</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HCS_GaussDB</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_hcs_gaussdb_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>382</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>388</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>UXDB</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_uxdb_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GaussDB</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_gaussdb_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MySQLPhysical</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_mysqlphysical_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>197</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OracleLogical</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_oraclelogic_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HANA</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_hana_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>390</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SequoiaDB</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_sequoiadb_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>414</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>473</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FusionSphere</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_fusionSphere_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>459</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>463</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Hyper_V</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_hyper_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>463</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>537</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>H3C</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_h3c_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>264</x>
+     <y>457</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>628</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Kubernetes</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_kubernetes_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>465</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>703</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VMware</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_vmware_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>90</x>
+     <y>478</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>459</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CNware</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_cnware_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>502</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>524</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HCS</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_hcs_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>529</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>713</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SangFor</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_sangfor_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>550</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>819</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TencentCloud</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_tencentcloud_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>543</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>513</x>
+     <y>766</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CCE</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_cce_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>626</x>
+     <y>779</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IVS</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_ivs_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>537</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>751</x>
+     <y>761</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OpenStack</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_openstack_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>400</x>
+     <y>521</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>796</x>
+     <y>778</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CommonCloud</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_commoncloud_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>650</x>
+     <y>754</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Zstack</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_zstack_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>184</x>
+     <y>517</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>784</x>
+     <y>771</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>EasyStack</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_easystack_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>486</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>825</x>
+     <y>586</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>InCloudSphere</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_incloudsphere_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>314</x>
+     <y>493</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>822</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TopSec</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_topsec_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>387</x>
+     <y>489</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>822</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FusionInsight</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_fusioninsight_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>551</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cloes11_2</sender>
+   <signal>clicked()</signal>
+   <receiver>showlog</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>409</x>
+     <y>761</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>817</x>
+     <y>715</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>findagent</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>one_step_ViewAgent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>463</x>
+     <y>739</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>360</x>
+     <y>784</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deleteagent</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>one_step_DelAgent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>551</x>
+     <y>777</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>575</x>
+     <y>784</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>changebackup</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>one_step_change_backupIP()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>793</x>
+     <y>738</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>148</x>
+     <y>774</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deleteagent_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>one_step_view_backupIP()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>587</x>
+     <y>751</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>144</x>
+     <y>732</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Tbase</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>on_checkBox_tbase_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>396</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>6</x>
+     <y>424</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>connectiontest()</slot>
+  <slot>Test()</slot>
+  <slot>on_checkBox_shentong_clicked()</slot>
+  <slot>on_checkBox_dm_clicked()</slot>
+  <slot>on_checkBox_highgo_clicked()</slot>
+  <slot>on_checkBox_system_clicked()</slot>
+  <slot>on_checkBox_script_clicked()</slot>
+  <slot>on_checkBox_massfile_clicked()</slot>
+  <slot>on_checkBox_file_clicked()</slot>
+  <slot>on_checkBox_nas_clicked()</slot>
+  <slot>on_checkBox_obs_clicked()</slot>
+  <slot>on_checkBox_oss_clicked()</slot>
+  <slot>on_checkBox_cos_clicked()</slot>
+  <slot>on_checkBox_sqlserver_clicked()</slot>
+  <slot>on_checkBox_mysqllogic_clicked()</slot>
+  <slot>on_checkBox_oraclephysical_clicked()</slot>
+  <slot>on_checkBox_sybase_clicked()</slot>
+  <slot>on_checkBox_db2_clicked()</slot>
+  <slot>on_checkBox_kingbaselogic_clicked()</slot>
+  <slot>on_checkBox_gbase8t_clicked()</slot>
+  <slot>on_checkBox_informix_clicked()</slot>
+  <slot>on_checkBox_oraclelogic_clicked()</slot>
+  <slot>on_checkBox_postgresql_clicked()</slot>
+  <slot>on_checkBox_mongodb_clicked()</slot>
+  <slot>on_checkBox_mysqlphysical_clicked()</slot>
+  <slot>on_checkBox_kingbasephysical_clicked()</slot>
+  <slot>on_checkBox_hana_clicked()</slot>
+  <slot>on_checkBox_domino_clicked()</slot>
+  <slot>on_checkBox_gbase8s_clicked()</slot>
+  <slot>on_checkBox_hadoop_clicked()</slot>
+  <slot>on_checkBox_uxdb_clicked()</slot>
+  <slot>on_checkBox_gaussdb_clicked()</slot>
+  <slot>on_checkBox_kdb_clicked()</slot>
+  <slot>on_checkBox_sequoiadb_clicked()</slot>
+  <slot>on_checkBox_tdsql_clicked()</slot>
+  <slot>on_checkBox_tidb_clicked()</slot>
+  <slot>on_checkBox_kingbaselogical_clicked()</slot>
+  <slot>on_checkBox_hcs_gaussdb_clicked()</slot>
+  <slot>on_checkBox_dmlogic_clicked()</slot>
+  <slot>on_checkBox_goldendb_clicked()</slot>
+  <slot>on_checkBox_opengauss_clicked()</slot>
+  <slot>on_checkBox_gaussdb_dws_clicked()</slot>
+  <slot>on_checkBox_fusionSphere_clicked()</slot>
+  <slot>on_checkBox_hyper_clicked()</slot>
+  <slot>on_checkBox_h3c_clicked()</slot>
+  <slot>on_checkBox_kubernetes_clicked()</slot>
+  <slot>on_checkBox_vmware_clicked()</slot>
+  <slot>on_checkBox_estack_clicked()</slot>
+  <slot>on_checkBox_incloudsphere_clicked()</slot>
+  <slot>on_checkBox_topsec_clicked()</slot>
+  <slot>on_checkBox_cnware_clicked()</slot>
+  <slot>on_checkBox_zstack_clicked()</slot>
+  <slot>on_checkBox_commoncloud_clicked()</slot>
+  <slot>on_checkBox_openstack_clicked()</slot>
+  <slot>on_checkBox_hcs_clicked()</slot>
+  <slot>on_checkBox_sangfor_clicked()</slot>
+  <slot>on_checkBox_tencentcloud_clicked()</slot>
+  <slot>on_checkBox_cce_clicked()</slot>
+  <slot>on_checkBox_ivs_clicked()</slot>
+  <slot>on_checkBox_cdp_clicked()</slot>
+  <slot>on_checkBox_kvmdriver_clicked()</slot>
+  <slot>on_checkBox_esxidriver_clicked()</slot>
+  <slot>on_checkBox_edr_clicked()</slot>
+  <slot>on_checkBox_blockcopy_clicked()</slot>
+  <slot>on_checkBox_vbdinitiator_clicked()</slot>
+  <slot>on_checkBox_sqlservercdm_clicked()</slot>
+  <slot>on_checkBox_oraclecdm_clicked()</slot>
+  <slot>on_checkBox_systemcdm_clicked()</slot>
+  <slot>on_checkBox_volumecdm_clicked()</slot>
+  <slot>on_checkBox_volumecopy_clicked()</slot>
+  <slot>on_checkBox_volumecbtdriver_clicked()</slot>
+  <slot>on_checkBox_ufs_clicked()</slot>
+  <slot>on_checkBox_uagent_clicked()</slot>
+  <slot>on_checkBox_easystack_clicked()</slot>
+  <slot>on_checkBox_fusioninsight_clicked()</slot>
+  <slot>one_step_ViewAgent()</slot>
+  <slot>one_step_DelAgent()</slot>
+  <slot>one_step_change_backupIP()</slot>
+  <slot>one_step_view_backupIP()</slot>
+  <slot>on_checkBox_tbase_clicked()</slot>
+ </slots>
+</ui>
